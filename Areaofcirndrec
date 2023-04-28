@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FirstAssignment
+{
+    internal class Over
+    {
+        public void  Area(int a , int b) 
+        {
+            int res;
+            res = a * b;
+            Console.WriteLine("The area of the rectangle is " + res);
+        }
+        public void Area(int a)
+        {
+            double res;
+             double pie=3.1;
+            res = pie * a * a;
+            Console.WriteLine("The area of the circle is " + res);
+        }
+        public static void Main(string[] args)
+        {
+            Over ob1 = new Over();
+           ob1.Area(10);
+            ob1.Area(10, 12);
+           
+        }
+    }
+}
