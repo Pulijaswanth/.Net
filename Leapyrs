@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace First
+{
+    internal class Leap
+    {
+        public Leap()
+        {
+            int a;
+            Console.WriteLine("Enter the Year which you want to check");
+            a=Convert.ToInt32(Console.ReadLine());
+            if (a % 4 == 0)
+            {
+                Console.WriteLine("The entered year is a Leap Year");
+            }
+            else
+            {
+                Console.WriteLine("The enetred year is not a leap year");
+            }
+        }
+        public static void Main(string[] args) 
+        {
+            Leap leap = new Leap(); 
+        }
+    }
+}
