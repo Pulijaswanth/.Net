@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OddEven
+
+{
+    internal class OddEVen
+    {
+        public OddEVen() 
+        {
+            int a;
+            Console.WriteLine("Enter the number whoch you want to check");
+            a = Convert.ToInt32(Console.ReadLine());
+            if (a % 2 == 0)
+            {
+                Console.WriteLine("The number which is entered is even number");
+            }
+            if (a % 2 != 0)
+            {
+                Console.WriteLine("The number which is entered is Odd number");
+            }
+
+        }
+        public static void Main() 
+        {
+            OddEVen ob1=new OddEVen();
+        }
+    }
+}
