@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FirstAssignment
+{
+    internal class Max
+    {
+        int a;
+        int b;
+        int res = 0;
+        public void  Sum()
+        { 
+            Console.WriteLine("enter the numbers to add ");
+            a=Convert.ToInt32(Console.ReadLine());
+            b=Convert.ToInt32(Console.ReadLine());
+            res = a + b;
+            Console.WriteLine("the sum of the entered two numbers are "+res);
+        }
+        public void  Multi()
+        {     
+            Console.WriteLine("Enter the two numbers to multiply");
+            a = Convert.ToInt32(Console.ReadLine());
+            b = Convert.ToInt32(Console.ReadLine());
+            res = a * b;
+            Console.WriteLine("The Product of both the numbers are "+res);
+        }
+        public  void Div()
+        {
+            Console.WriteLine("Enter the two numbers to Divide");
+            try
+            {
+                a = Convert.ToInt32(Console.ReadLine());
+                b = Convert.ToInt32(Console.ReadLine());
+                res = a / b;
+            }
+            catch (DivideByZeroException ob)
+            {
+                Console.WriteLine(ob.Message);
+            }
+            Console.WriteLine("The Division of both the numbers are " + res);
+        }
+        public static void Main(string[] args)
+        {
+            Max ob1 = new Max();
+            ob1.Sum();
+            ob1.Multi();    
+            ob1.Div();
+
+        }
+
+    }
+}
