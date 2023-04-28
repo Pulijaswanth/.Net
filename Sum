@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FirstAssignment
+{
+    internal class Sum
+    {
+        public Sum()
+        {
+            int n,Sum=0;
+            Console.WriteLine("Enter the number till which the sum need to be added");
+            n=Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= n; i++)
+            {
+                Sum += i;
+            }
+            Console.WriteLine("the sum of the number is "+Sum);
+        }
+        public static void Main(string[] args) 
+        {
+            Sum ob=new Sum();
+        }
+    }
+}
